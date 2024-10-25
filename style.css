@@ -1,56 +1,125 @@
-/* Basic reset for margin and padding */
+/* ========== Global Styles ========== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Body styling */
-body {
-    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
+}
+
+body {
+    background-color: #f0f2f5;
     line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Header styling */
+/* ========== Header & Navigation ========== */
+
 header {
-    padding: 10px 20px;
     background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-/* Style for the navigation bar */
 .top-nav {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: right;
+    padding-right: 20px;
 }
 
-/* Style for individual links */
 .top-nav a {
-    color: #333; /* Text color for links */
+    color: #0073e6;
     text-decoration: none;
-    font-size: 0.9em;
-    margin-left: 15px; /* Space between links */
+    font-weight: 500;
+    font-size: 1em;
+    margin-left: 20px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .top-nav a:hover {
-    color: #0073e6; /* Color change on hover */
-    text-decoration: underline; /* Adds underline on hover */
+    color: #005bb5;
+    text-decoration: underline;
 }
 
-/* Main content styling */
+/* ========== Main Content ========== */
+
 main {
-    padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styling */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #005bb5;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+
 footer {
-    padding: 10px 20px;
+    max-width: 800px;
+    padding: 15px;
     text-align: center;
     color: #777;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    margin: 30px auto;
     border-top: 1px solid #ddd;
-    margin-top: 20px;
+}
+
+/* ========== Button Style (Optional for Call to Action) ========== */
+
+.button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #005bb5;
 }
